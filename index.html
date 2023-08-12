@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">    
+
 </head>
 <body>
         
@@ -21,7 +23,8 @@
 
         <nav>
             <a href="index.html"><img src="assets/images/logo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="HOME">HOME</a></li>
                     <li><a href="ABOUT">ABOUT</a></li>
@@ -30,9 +33,50 @@
                     <li><a href="CONTACT">CONTACT</a></li>
                 </ul>
             </div>
-        </nav>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>     
+       </nav>
 
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making Website is now one of easier thing in the world. You 
+                just need to learn HTML, CSS,<br> Javacript and your are good to go.
+            </p>
+            <a href="" class="hero-btn">Visit Us to know More</a>
+        </div>
     </section>
+<!--- course  --->
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermidiate</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate aperiam hic et sapiente. Laboriosam officia eos doloremque ea quidem culpa quam, 
+                    cum placeat voluptate illum? Possimus laborum facilis illo dignissimos!
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate aperiam hic et sapiente. Laboriosam officia eos doloremque ea quidem culpa quam, 
+                    cum placeat voluptate illum? Possimus laborum facilis illo dignissimos!
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate aperiam hic et sapiente. Laboriosam officia eos doloremque ea quidem culpa quam, 
+                    cum placeat voluptate illum? Possimus laborum facilis illo dignissimos!
+                </p>
+            </div>
+        </div>
+        
+    </section>
+
+<!--- Javacript for toggle menu --->
+    <script src="./assets/js/script.js"></script>
 
 
 </body>
